@@ -20,11 +20,11 @@
         <div class="title-box"></div>
         <!-- 登陆的div  -->
         <div class="login_box">
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form_login">
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
                     <!-- lay-verify -->
-                    <input type="text" name="usname" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
@@ -35,17 +35,17 @@
                     <button class="layui-btn layui-btn-fluid  layui-btn-normal" lay-submit lay-filter="formDemo">登陆</button>
                 </div>
                 <div class="layui-form-item links">
-                    <a href="javascipt:;" id="link_reg">去注册</a>
+                    <a href="javascript:;" id="link_reg">去注册</a>
                 </div>
 
             </form>
         </div>
         <!-- 注册的div  -->
         <div class="reg_box">
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form_reg">
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
-                    <input type="text" name="usname" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
@@ -61,13 +61,14 @@
                     <button class="layui-btn layui-btn-fluid  layui-btn-normal" lay-submit lay-filter="formDemo">登陆</button>
                 </div>
                 <div class="layui-form-item links">
-                    <a href="javascipt:;" id="link_login">去登陆</a>
+                    <a href="javascript:;" id="link_login">去登陆</a>
                 </div>
             </form>
         </div>
     </div>
     <script src="./assets/lib/layui/layui.all.js"></script>
     <script src="./assets/lib/jquery.js"></script>
+    <script src="./assets/js/baseApi.js"></script>
     <script src="./assets/js/login.js">
     </script>
 </body>
