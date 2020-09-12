@@ -26,6 +26,7 @@ $(function() {
                 // }
             })
         }
+        window.getUserInfo = getUserInfo
 
         function randerAvatar(user) {
             //获取用户的名称
