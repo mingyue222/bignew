@@ -16,10 +16,11 @@ $(function() {
             url: '/my/userinfo',
             type: 'get',
             success: function(res) {
+                console.log(res);
+
                 if (res.status !== 0) {
                     return layer.msg(res.message)
                 }
-                console.log(res);
                 form.val('formUserInfo', res.data)
 
             }
@@ -31,7 +32,7 @@ $(function() {
             initUserInfo()
         })
         //更新基本资料
-    $('.layui-form').on('click', function(e) {
+    $('#changeUserInfo').on('submit', function(e) {
         e.preventDefault()
         $.ajax({
             url: '/my/userinfo',
@@ -42,7 +43,7 @@ $(function() {
                     return layer.msg(res.message)
                 }
                 // 调用父页面中的方法，重新渲染用户的头像和用户的信息
-                window.parent.initUserInfo()
+                window.parent.getUserInfo()
             }
         })
     })

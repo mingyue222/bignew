@@ -30,7 +30,7 @@ $(function() {
 
         function randerAvatar(user) {
             //获取用户的名称
-            var name = user.username || user.nickname
+            var name = user.nickname || user.username
                 //设置欢迎文本
             $('.welcome').html('欢迎&nbsp;&nbsp' + name)
                 //判断用户有没有设置头像
